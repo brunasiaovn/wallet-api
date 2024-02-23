@@ -1,9 +1,13 @@
 import express, { json } from "express";
 import authRouter from "./routes/authRoutes.js";
+import { connectDb } from "./config/database.js";
+
 
 const app = express();
-app.use(json());
 
+connectDb();
+app.use(json());
 app.use(authRouter);
 
-app.listen(8080, () => console.log("Server listening in port 8080"));
+const port = process.env.PORT;
+app.listen(port, () => console.log(`Server listening in port 8080 ${port}`));
