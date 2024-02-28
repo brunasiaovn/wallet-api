@@ -2,7 +2,7 @@ import transactionService from "../services/transactionService.js";
 
 async function create(req, res) {
   const body = req.body;
-  const id = "65dc8cbfdde15b9dc1f7b6ac";
+  const { _id: id } = res.locals.user;
 
   try {
     const transaction = await transactionService.create(body, id);
