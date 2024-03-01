@@ -2,9 +2,13 @@
 ##
 ### Setup de um projeto Node com Express:
 Github: https://github.com/brunasiaovn
+
 Node: https://nodejs.org/en
+
 VsCode: https://code.visualstudio.com/
+
 Express: https://expressjs.com/pt-br/
+
 Nodemon: https://nodemon.io/
 
 ### Arquitetura de software:
